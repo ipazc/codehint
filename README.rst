@@ -8,31 +8,42 @@ console rather than to a window.
 
 .. image:: https://badge.fury.io/py/codehint.svg
     :target: https://badge.fury.io/py/codehint
+.. image:: https://travis-ci.org/ipazc/codehint.svg?branch=master
+    :target: https://travis-ci.org/ipazc/codehint
+.. image:: https://coveralls.io/repos/github/ipazc/vrpwrp/badge.svg?branch=master
+    :target: https://coveralls.io/github/ipazc/codehint?branch=master
 
-An easy example of usage is as follows:
+
+Example
+=======
 
 If we have the following function defined somewhere in our code:
 
 .. code:: python
 
     >>> def hello(a, b:int, c) -> int:
-    >>>     """
-    >>>     Hello, this is an explanation
-    >>>     of what this is going to do
-    >>>     :param a: foo
-    >>>     :param b: bar example
-    >>>     :param c:
-    >>>     :return: True if good, False otherwise.
-    >>>     """
-    >>>     x = a + b * 2*c
-    >>>     return x
+    ...     """
+    ...     Hello, this is an explanation
+    ...     of what this is going to do
+    ...     :param a: foo
+    ...     :param b: bar example
+    ...     :param c:
+    ...     :return: True if good, False otherwise.
+    ...     """
+    ...     x = a + b * 2*c
+    ...     return x
 
-It can be described in any time later on with codehint:
+It can be described later on with `CodeHint`:
 
 .. code:: python
 
     >>> from codehint import hint
     >>> hint(hello)
+
+The result is
+
+.. code:: bash
+
     ------------------------
     def hello(a, b:int, c) -> int:
     
