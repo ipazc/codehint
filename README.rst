@@ -10,7 +10,7 @@ console rather than to a window.
     :target: https://badge.fury.io/py/codehint
 .. image:: https://travis-ci.org/ipazc/codehint.svg?branch=master
     :target: https://travis-ci.org/ipazc/codehint
-.. image:: https://coveralls.io/repos/github/ipazc/vrpwrp/badge.svg?branch=master
+.. image:: https://coveralls.io/repos/github/ipazc/codehint/badge.svg?branch=master
     :target: https://coveralls.io/github/ipazc/codehint?branch=master
 
 
